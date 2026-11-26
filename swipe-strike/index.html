@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Swipe Strike – Gesture Fighting Game for Android</title>
+<meta name="description" content="Swipe to fight! An arcade fighting game built for touch screens, with 13 fighters, cinematic Super Arts and online play. Coming soon to Google Play.">
+<meta property="og:title" content="Swipe Strike: Gesture Fighter">
+<meta property="og:description" content="Swipe to fight! 13 fighters, Super Arts and online play. Coming soon to Google Play.">
+<meta property="og:image" content="https://corysyx.github.io/swipe-strike/img/hero.jpg">
+<link rel="icon" href="img/favicon.png">
+<style>
+  :root{--bg:#0b0820;--panel:#160f2e;--line:#2b2150;--text:#efeaf8;--muted:#a99fc8;--gold:#ffd23f;--orange:#ff7a1a;--pink:#ff4fa3;--sky:#7fd8ff}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--text);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  body::after{content:"";position:fixed;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(0,0,0,.18) 0 1px,transparent 1px 3px);mix-blend-mode:multiply}
+  a{color:var(--sky)}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+  header{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+  .hero{display:block;width:100%;height:auto;max-width:1024px;margin:0 auto;image-rendering:pixelated}
+  header{background:#000}
+  .hero-fade{position:absolute;inset:auto 0 0 0;height:18%;background:linear-gradient(transparent,var(--bg))}
+  .intro{display:flex;gap:22px;align-items:center;margin:28px 0 0;position:relative}
+  .icon{width:112px;height:112px;object-fit:cover;border-radius:24px;box-shadow:0 8px 30px rgba(0,0,0,.6);flex:none;image-rendering:pixelated}
+  h1{margin:0;font-size:clamp(1.8rem,4.5vw,3rem);line-height:1.05;letter-spacing:.02em;text-transform:uppercase;
+     background:linear-gradient(180deg,#fff 0 40%,var(--gold) 60%,var(--orange));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .tag{margin:6px 0 0;color:var(--muted);font-weight:600;letter-spacing:.04em}
+  .cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:28px 0 8px}
+  .badge{display:inline-flex;align-items:center;gap:10px;padding:12px 20px;border-radius:12px;background:#000;border:1px solid #3a3360;color:#fff;font-weight:700;text-decoration:none}
+  .badge small{display:block;font-weight:500;font-size:.72rem;color:var(--muted);letter-spacing:.05em;text-transform:uppercase}
+  .badge.soon{opacity:.9;cursor:default}
+  .pill{padding:6px 12px;border-radius:999px;background:var(--panel);border:1px solid var(--line);color:var(--gold);font-weight:700;font-size:.85rem;letter-spacing:.06em}
+  section{padding:44px 0;border-bottom:1px solid var(--line)}
+  h2{margin:0 0 18px;font-size:1.35rem;text-transform:uppercase;letter-spacing:.08em;color:var(--pink)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
+  .card h3{margin:0 0 6px;font-size:1rem;color:var(--gold);text-transform:uppercase;letter-spacing:.05em}
+  .card p{margin:0;color:var(--text);font-size:.95rem}
+  .shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+  .shots img{width:100%;height:auto;display:block;border-radius:10px;border:1px solid var(--line);image-rendering:pixelated}
+  footer{padding:32px 0 48px;color:var(--muted);font-size:.9rem}
+  footer a{margin-right:18px}
+</style>
+</head>
+<body>
+<header>
+  <img class="hero" src="img/hero.jpg" alt="Swipe Strike logo over Kaito firing a fireball at Magatsu" width="1024" height="500">
+  <div class="hero-fade"></div>
+</header>
+
+<main class="wrap">
+  <div class="intro">
+    <img class="icon" src="img/icon.png" alt="Swipe Strike app icon" width="112" height="112">
+    <div>
+      <h1>Swipe Strike</h1>
+      <p class="tag">GESTURE FIGHTING GAME FOR ANDROID</p>
+    </div>
+  </div>
+
+  <div class="cta">
+    <!-- When the game is live, swap this span for:
+         <a class="badge" href="https://play.google.com/store/apps/details?id=com.swipestrike.game"> -->
+    <span class="badge soon"><span>&#9654;</span><span><small>Coming soon to</small>Google Play</span></span>
+    <span class="pill">FREE TO PLAY</span>
+  </div>
+
+  <section>
+    <h2>Swipe to fight</h2>
+    <p>Swipe Strike is a fast arcade fighting game built for touch screens. No virtual buttons: tap, swipe and arc your finger to punch, kick, throw fireballs and unleash screen-filling Super Arts.</p>
+    <div class="grid">
+      <div class="card"><h3>13 fighters</h3><p>Fireballs, suplexes, shadow teleports, lightning and kung fu stances. Every fighter plays differently.</p></div>
+      <div class="card"><h3>Super Arts</h3><p>Fill your meter and launch a cinematic finisher. And a final boss waits at the end of Arcade.</p></div>
+      <div class="card"><h3>Real depth</h3><p>Parries, combos, juggles, air specials and tag-in flying kicks, all with simple gestures.</p></div>
+      <div class="card"><h3>Play your way</h3><p>Arcade, Tag Battle, VS Online with rollback netcode, Training and Bonus Stages.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Screenshots</h2>
+    <div class="shots">
+      <img src="img/1_archon.jpg" alt="The final boss Archon in his Super Art" loading="lazy" width="960" height="540">
+      <img src="img/3_raiko.jpg" alt="Raiko throws a lightning orb" loading="lazy" width="960" height="540">
+      <img src="img/2_tank.jpg" alt="Tank's Earthquake Buster explosion" loading="lazy" width="960" height="540">
+      <img src="img/4_tag.jpg" alt="A tag partner flies in with a kick" loading="lazy" width="960" height="540">
+      <img src="img/6_shenwu.jpg" alt="Shenwu's Thousand Mantis flurry" loading="lazy" width="960" height="540">
+      <img src="img/8_bonus.jpg" alt="Smashing a car in the bonus stage" loading="lazy" width="960" height="540">
+    </div>
+  </section>
+
+  <footer>
+    <a href="privacy.html">Privacy policy</a>
+    <span>&copy; 2026 Cory Syx. All rights reserved.</span>
+  </footer>
+</main>
+</body>
+</html>
